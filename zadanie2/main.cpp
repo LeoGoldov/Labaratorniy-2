@@ -1,8 +1,14 @@
 #include <iostream>
+#include <Windows.h>
 #include "Header.h"
 using namespace std;
 int main() {
-    setlocale(LC_ALL, "RU");
+    
+    // Блок для русского языка
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    setlocale(LC_ALL, "ru_RU.UTF-8");
+    
     Time time1;  
     int hour, minute, second;  
     cout << "Введите час: ";
