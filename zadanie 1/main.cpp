@@ -4,7 +4,11 @@
 using namespace std;
 // Основная функция программы
 int main() {
-    setlocale(LC_ALL, "RU");
+     // Блок для русского языка
+ SetConsoleOutputCP(CP_UTF8);
+ SetConsoleCP(CP_UTF8);
+ setlocale(LC_ALL, "ru_RU.UTF-8");
+    
     double calories; 
     double weight;    
     cout << "Введите калорийность на 100г продукта: ";
